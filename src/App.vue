@@ -58,7 +58,6 @@
 							{{ task.content }}
 						</span>
 					</div>
-
 					<span><button @click="deleteTask(index)">Delete</button></span>
 				</li>
 			</ul>
@@ -71,7 +70,7 @@ export default {
 	data() {
 		return {
 			tasks: [],
-			enteredTask: null,
+			enteredTask: '',
 			category: null,
 			name: '',
 		}
